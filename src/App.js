@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import Game from './Game';
-import './App.css';
+import Game from "./Game";
+import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -17,12 +17,11 @@ class App extends React.Component {
   }
 
   render() {
-    const { size} = this.state;
+    const { size } = this.state;
     return (
       <div className="app">
-        {/* <input type="number" value={size} onChange={this.onSizeChange}></input> */}
-        {size ? <Game width={size} height={size} /> : ''}
-
+        <input type="number" value={size} onChange={this.onSizeChange}></input>
+        {size ? <Game width={size} height={size} /> : ""}
       </div>
     );
   }
