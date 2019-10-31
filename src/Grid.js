@@ -6,9 +6,9 @@ class Grid {
     this.height = h;
     this.def = def;
     this.grid = [];
-    for(let row = 0; row < this.height; row++) {
+    for (let row = 0; row < this.height; row++) {
       let gridRow = [];
-      for(let col = 0; col < this.width; col++) {
+      for (let col = 0; col < this.width; col++) {
         gridRow.push(def);
       }
       this.grid.push(gridRow);
@@ -17,8 +17,8 @@ class Grid {
 
   getCellsWithValue(val) {
     let result = [];
-    for(let i = 0; i < this.height; i++) {
-      for(let j = 0; j < this.width; j++) {
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) {
         if (this.grid[i][j] == val) {
           result.push([i, j]);
         }
@@ -45,4 +45,3 @@ class Grid {
 }
 
 export default Grid;
-
